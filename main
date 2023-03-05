@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner kb = new Scanner(System.in);
+    
+    char[][] board = new char[3][3];
+
+    
+    for (int row = 0; row < board.length; row++) {
+      for (int col = 0; col < board[row].length; col++) {
+        board[row][col] = '.';
+      }
+    }
+
+    
+    char thisPlayer = 'X';
+    boolean finished = false;
+
+    
+    while (!finished) {
+
+      for (int row = 0; row < board.length; row++) {
+        for (int col = 0; col < board[row].length; col++) {
+          System.out.print(board[row][col]);
+        }
+        System.out.println();
+      }
+
+ 
+      System.out.println("Character to be placed is " + thisPlayer);
+      System.out.print("Enter the row at which you wish to place it> ");
+      
+      System.out.print("Enter the column at which you wish to place it> ");
+     
+    
+      
+      
+    }
+  }
+}
